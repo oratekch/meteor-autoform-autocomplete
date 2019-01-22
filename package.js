@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'mpowaga:autoform-autocomplete',
+  name: 'oratek:autoform-autocomplete',
   version: '0.0.2',
   summary: 'Autocomplete inputs for aldeed:autoform using mizzao:autocomplete',
-  git: 'https://github.com/mpowaga/meteor-autoform-autocomplete.git',
+  git: 'https://github.com/oratekch/meteor-autoform-autocomplete.git',
   documentation: 'README.md'
 });
 
@@ -14,7 +14,7 @@ Package.onUse(function(api) {
     'templating',
     'mrt:copy-template@0.9.0',
     'mizzao:autocomplete@0.5.1',
-    'aldeed:autoform@4.2.2 || 5.1.2'
+    'aldeed:autoform@6.0.0'
   ], 'client');
 
   api.addFiles([
@@ -27,7 +27,7 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('mpowaga:autoform-autocomplete');
+  api.use('oratek:autoform-autocomplete');
 
   api.addFiles('tests/helpers.js', 'client');
 });
